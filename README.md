@@ -121,7 +121,7 @@ $ rebar3 shell
 27> ok = elmdb:txn_commit(Txn2).
 
 %% delete all key-value pairs in the database
-28> ok = elmdb:drop(Env).
+28> ok = elmdb:drop(Dbi).
 
 %% try to retrieve key <<"a">> value
 29> not_found = elmdb:get(Env, <<"a">>).
